@@ -1,83 +1,36 @@
-Spam Email Classification using NLP and Machine Learning
-Introduction
-This project focuses on building a robust spam email classification system using Natural Language Processing (NLP) and Machine Learning. By leveraging techniques such as text preprocessing, Bag-of-Words (BoW) feature extraction, and a Multinomial Naive Bayes classifier, the system accurately distinguishes between spam and non-spam emails.
+# **Spam Email Classification using NLP and Machine Learning**
 
-The project includes two user-friendly deployment platforms:
+## **Project Overview**
+This project implements a **Spam Email Classification System** using **Natural Language Processing (NLP)** and **Machine Learning** techniques. The system is designed to classify emails as either "spam" or "ham" (not spam). It uses the **Naive Bayes** classification algorithm after extracting relevant features from the email content using **Bag-of-Words (BoW)**. 
 
-A desktop application built with Tkinter.
-A web-based application powered by Streamlit.
-Features
-Classifies emails as Spam or Not Spam.
-Speech notification feature (for Tkinter application).
-Lightweight and efficient model for quick predictions.
-User-friendly interface for desktop and web platforms.
-Technologies Used
-Programming Language: Python
-Libraries and Frameworks:
-Pandas
-NumPy
-Scikit-learn
-Tkinter
-Streamlit
-Win32com (for speech synthesis)
-Machine Learning Algorithm: Multinomial Naive Bayes
-NLP Techniques: Text preprocessing, Bag-of-Words
-System Requirements
-Hardware Requirements
-Processor: Intel i3 or higher
-RAM: 4GB or higher
-Storage: 500MB free space
-Software Requirements
-Python 3.8 or higher
-Required libraries (install via requirements.txt)
-Setup Instructions
-Clone the Repository:
+The project includes two user interfaces:
+- **Desktop Application**: Built using **Tkinter**, which provides a simple GUI for classifying emails.
+- **Web Application**: Built using **Streamlit**, providing a web interface for email classification.
 
-bash
-Copy code
-git clone <repository_link>  
-cd spam-email-classification  
-Install Dependencies:
+## **Technologies Used**
+- **Programming Language**: Python
+- **Libraries & Frameworks**:
+  - **Pandas** for data manipulation
+  - **NumPy** for numerical computations
+  - **Scikit-learn** for machine learning algorithms
+  - **Tkinter** for the desktop application
+  - **Streamlit** for the web application
+  - **win32com.client** (for text-to-speech functionality in the desktop app)
+- **Machine Learning Algorithm**: **Multinomial Naive Bayes**
+- **NLP Techniques**: 
+  - Text Preprocessing
+  - Bag-of-Words (BoW) Vectorization
 
-bash
-Copy code
-pip install -r requirements.txt  
-Run the Desktop Application:
+## **Features**
+- **Email Classification**: Classifies inputted email messages into **Spam** or **Ham**.
+- **Speech Output**: Provides speech output for classification results (Desktop Application).
+- **Web Interface**: A simple and intuitive web interface (Streamlit).
+- **Quick Prediction**: Efficient and lightweight model that gives quick predictions.
 
-bash
-Copy code
-python desktop_app.py  
-Run the Web Application:
+## **Setup Instructions**
 
-bash
-Copy code
-streamlit run web_app.py  
-Usage
-Enter an email message into the input field.
-Click the "Classify" button.
-View the result:
-"Spam Email" for spam.
-"Not Spam Email" for ham.
-Project Structure
-plaintext
-Copy code
-spam-email-classification/  
-│  
-├── data/  
-│   └── spam.csv                  # Dataset  
-├── models/  
-│   ├── spam.pkl                  # Trained Model  
-│   ├── vectorizer.pkl            # Vectorizer  
-├── desktop_app.py                # Tkinter Application  
-├── web_app.py                    # Streamlit Application  
-├── requirements.txt              # Dependencies  
-└── README.md                     # Project Documentation  
-Snapshots
-Desktop Application:
-
-Web Application:
-
-Future Enhancements
-Incorporate advanced algorithms like Random Forest or Deep Learning models.
-Extend the system to classify multilingual spam emails.
-Integrate with email clients for real-time spam detection.
+### **Step 1: Clone the Repository**
+Clone this repository to your local machine using the following command:
+```bash
+git clone https://github.com/yourusername/spam-email-classification.git
+cd spam-email-classification
